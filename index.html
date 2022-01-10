@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlefiDev HUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+    <div class="App">
+        <div class="container">
+            <div class="card">
+                <div class="title">
+                    AlefiDev HUB
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="container1">
+            <!-- <div class="imgContainer" style="max-width: 100%;"><img src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg" alt=""></div> -->
+            <div class="cardWeather">
+                <div class="subtitle">Clima</div>
+                <h2><i class="fa fa-map-marker-alt"></i> <span id="location"></span></h2>
+                <h6 id="weather"></h6>
+                <h4><span id="temp"></span></h4>
+                <img id="icon" src="">
+                <button onClick="window.location.reload();" class="refresh"><i class="fas fa-redo-alt"></i></button>
+            </div>
+
+            <div class="cardWeather">
+                <div class="subtitle">Sensação</div>
+                <h3>Sensação Climática</h3>
+                <h4><span id="temp2"></span></h4>
+                <h3>Velocidade do vento</h3>
+                <h4><span id="temp3"></span></h4>
+                <img id="icon" src="">
+                <button onClick="window.location.reload();" class="refresh"><i class="fas fa-redo-alt"></i></button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="container">
+            <div class="card">
+                <div class="container1">
+                    <div class="hour">
+                        <div class="subtitle">horário</div>
+                        <i class="far fa-clock"></i><h3 id="hora"></h3>
+                    </div>
+
+                    <div class="money">
+                        <div class="subtitle">Cotação do dólar USD/BRL</div>
+                        <div class="gridMoney">
+                            <div class="gridItem">
+                                <div class="titleGrid"><h4><span id="name"></span></h4></div>
+                                <h3 id="usd"></h3>
+                            </div>
+                            <div class="gridItem">
+                                <div class="titleGrid"><h4><span id="name2"></span></h4></div>
+                                <h3 id="eur"></h3>
+                            </div>
+                            <div class="gridItem">
+                                <div class="titleGrid"><h4><span id="name3"></span></h4></div>
+                                <h3 id="btc"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="card">
+                <div class="watch">
+                    <div class="subtitle">Temporizador</div>
+                    <form name="form_main">
+                        <div class="time">
+                        <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+                        </div>
+                    
+                        <br />
+                        <div class="controls">
+                            <button id="start" type="button" name="start"><i class="fas fa-play"></i></button>
+                            <button id="stop" type="button" name="pause"><i class="fas fa-pause"></i></button>
+                            <button id="reset" type="button" name="reset"><i class="fas fa-redo-alt"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="divider"></div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="weather.js"></script>
+<script src="watch.js"></script>
+<script src="money.js"></script>
+
+</html>

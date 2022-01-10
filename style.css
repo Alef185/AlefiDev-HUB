@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;  
+}
+body{
+    background-color: #3b3b3b;
+    padding: 10px 400px;
+}
+.App{
+    padding: 50px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: #eee;
+    border-radius: 20px;
+    border-radius: 20px;
+background: #3b3b3b;
+box-shadow:  8px 8px 16px #262626,
+             -8px -8px 16px #505050;
+}
+.title{
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.subtitle{
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-top: 10px;
+    color: rgb(53, 172, 252);
+    text-transform: uppercase;
+}
+.fa-clock{
+    font-size: 2em;
+}
+.cardWeather, .hour, .watch, .money{
+    border-radius: 20px;
+    background: #3b3b3b;
+    box-shadow: inset 2px 2px 4px #1e1e1e,
+                inset -2px -2px 4px #595959;
+                margin: 10px;
+}
+.cardWeather h2{
+    font-weight: 600;
+    font-size: 2em;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.imgContainer img{
+    width: 100%;
+    border-radius: 20px;
+    background: #3b3b3b;
+    box-shadow: inset 2px 2px 4px #1e1e1e,
+                inset -2px -2px 4px #595959;
+                margin: 10px;
+}
+#hora{
+    font-weight: 500;
+    font-size: 3em;
+}
+.time{
+    font-weight: 300;
+    font-size: 3em;
+}
+.divider{
+    width: 100%;
+    height: 7px;
+    border-radius: 20px;
+    background: #3b3b3b;
+    background: linear-gradient(145deg, #3f3f3f, #353535);
+box-shadow:  1px 1px 2px #232323,
+             -1px -1px 2px #535353;
+}
+button.refresh {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    border: 0;
+    background: transparent;
+    color: #9c9c9d;
+    font-size: 30px;
+    height: 50px;
+    border-radius: 41px;
+background: linear-gradient(145deg, #3f3f3f, #353535);
+box-shadow:  1px 1px 2px #232323,
+             -1px -1px 2px #535353;
+    transition: 0.3s;
+}
+button.refresh:hover{
+	box-shadow: 0px 0px 0px #252525, 0px 0px 0px #4a4a4a,
+      inset 4px 4px 8px #252525, inset -4px -4px 8px #4a4a4a;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controls button {
+	display: block;
+    width: 100px;
+    margin: 10px auto;
+    border: 0;
+    background: transparent;
+    color: #9c9c9d;
+    font-size: 30px;
+    height: 50px;
+    border-radius: 41px;
+    background: linear-gradient(145deg, #3f3f3f, #353535);
+    box-shadow:  1px 1px 2px #232323,
+                 -1px -1px 2px #535353;
+             transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    box-shadow: 0px 0px 0px #252525, 0px 0px 0px #4a4a4a,
+      inset 4px 4px 8px #252525, inset -4px -4px 8px #4a4a4a;
+}
+
+#temp{
+    font-weight: 500;
+    font-size: 3em;
+}
+#temp2, #temp3{
+    font-weight: 500;
+    font-size: 2.5em;
+}
+#weather{
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.gridMoney{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+.gridItem{
+    border-radius: 10px;
+background: linear-gradient(145deg, #3f3f3f, #353535);
+box-shadow:  2px 2px 3px #232323,
+             -2px -2px 3px #535353;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.gridItem h4{
+    font-weight: 500;
+    font-size: 1em;
+}
+.gridItem h3{
+    padding: 7px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.titleGrid{
+    background-color: rgb(37, 120, 175);
+    height: 25px;
+}
+@media screen and (max-width: 1700px){
+    body{
+        padding: 10px 300px;
+    }
+}
+@media screen and (max-width: 1430px){
+    body{
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 1024px){
+    body{
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 865px){
+    .container1:last-child{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 745px){
+    .container1{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 610px){
+    body{
+        padding: 0;
+    }
+    .App{
+        padding: 0;
+        border-radius: 0;
+    }
+}
